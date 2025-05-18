@@ -1,128 +1,91 @@
-/* Base styles */
-body {
-  margin: 0;
-  padding: 0;
-  background: #18181b;
-  color: #e5e7eb;
-  font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Divya Lanka | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
 
-nav {
-  background: #23232a;
-  padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.2s;
-}
-nav a:hover {
-  color: #a5b4fc;
-}
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hi, I'm <span class="highlight">Sai Divya Lanka</span></h1>
+    <p>Data Engineer & Analytics Leader. I build cloud, analytics, and BI solutions that drive business results.</p>
+    <a href="#about" class="resume-btn">Learn More</a>
+  </section>
 
-/* Section styles */
-section {
-  max-width: 800px;
-  margin: 48px auto 0 auto;
-  padding: 0 16px;
-}
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="exp-card">
+      <p>
+        With 4+ years of experience in data engineering, BI, and analytics, I've designed and built data pipelines, dashboards, and cloud solutions for global teams. I love transforming messy data into business insights.
+      </p>
+      <ul>
+        <li>Skilled in ETL, SQL, Python, Power BI, and AWS.</li>
+        <li>Experienced with Fortune 500s and startups alike.</li>
+        <li>Passionate about problem-solving and impactful results.</li>
+      </ul>
+      <a href="src/pdf/SaiDivyaLanka_Resume.pdf" class="resume-btn" target="_blank">Resume</a>
+    </div>
+  </section>
 
-h1, h2, h3 {
-  color: #a5b4fc;
-}
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Power BI</li>
+      <li>Tableau</li>
+      <li>AWS</li>
+      <li>Snowflake</li>
+      <li>Databricks</li>
+      <li>Spark</li>
+      <li>Airflow</li>
+      <li>Excel</li>
+      <li>MongoDB</li>
+      <li>Java</li>
+    </ul>
+  </section>
 
-.highlight {
-  color: #e879f9;
-}
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proj-card">
+      <h3>Darknet Traffic Detection (IoT Security)</h3>
+      <p>Built Python LSTM models to classify darknet traffic and enhance IoT security.</p>
+      <span class="exp-date">Tech Stack: Python, LSTM, Pandas, Keras</span>
+      <br>
+      <a href="https://github.com/lssdivya/Darknet_Traffic_Detection" target="_blank">GitHub Repo</a>
+    </div>
+    <div class="proj-card">
+      <h3>YouTube Global Analytics Dashboard</h3>
+      <p>Developed a Streamlit dashboard analyzing YouTube’s global reach and trends.</p>
+      <span class="exp-date">Tech Stack: Streamlit, Python, Pandas</span>
+      <br>
+      <a href="https://globalyoutubestatistics.streamlit.app/" target="_blank">Live Demo</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
 
-.exp-card, .proj-card {
-  background: #23232a;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 24px;
-  box-shadow: 0 2px 8px rgba(60,60,90,0.1);
-}
-
-.exp-date {
-  font-size: 0.9rem;
-  color: #818cf8;
-}
-
-ul {
-  padding-left: 1.2em;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  list-style: none;
-  padding: 0;
-}
-
-.skills-list li {
-  background: #262638;
-  border-radius: 8px;
-  padding: 6px 14px;
-  font-size: 0.97rem;
-}
-
-.social-links {
-  margin-top: 10px;
-}
-.social-links a {
-  color: #a5b4fc;
-  margin-right: 14px;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-.social-links a:hover {
-  color: #e879f9;
-}
-
-.resume-btn {
-  display: inline-block;
-  background: #6366f1;
-  color: #fff;
-  padding: 10px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 10px;
-  transition: background 0.2s;
-}
-.resume-btn:hover {
-  background: #a5b4fc;
-}
-
-footer {
-  text-align: center;
-  padding: 28px 0 12px 0;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-/* Responsive for mobile */
-@media (max-width: 600px) {
-  section {
-    margin: 32px auto 0 auto;
-    padding: 0 8px;
-  }
-  nav ul {
-    gap: 1rem;
-    font-size: 0.98rem;
-  }
-}
+  <footer>
+    &copy; 2024 Sai Divya Lanka | Connect: 
+    <span class="social-links">
+      <a href="https://www.linkedin.com/in/divls/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/lssdivya" target="_blank">GitHub</a>
+      <a href="mailto:sdivya.lanka@gmail.com">Email</a>
+    </span>
+  </footer>
+</body>
+</html>
