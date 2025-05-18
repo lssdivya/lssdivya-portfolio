@@ -11,53 +11,112 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <section id="about">
-    <h1>Hi, I'm <span class="highlight">Sai Divya Lanka</span> 👋</h1>
-    <p>Data Engineer | Software Engineer | Analytics Enthusiast</p>
-    <p>
-      I design, build, and scale data-driven solutions for real business impact. 
-      Skilled in Python, SQL, Power BI, and modern cloud platforms. 
-      <br>
-      Currently open to full-time opportunities!
-    </p>
-    <div class="social-links">
-      <a href="https://github.com/divya-ls" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/divls" target="_blank">LinkedIn</a>
-      <a href="mailto:sdivya.lanka@gmail.com">Email</a>
-    </div>
-  </section>
+  <h1>Hi, I'm <span class="highlight">Sai Divya Lanka</span> 👋</h1>
+  <p><strong>Data Engineer | Data Analyst | BI Engineer | Data Scientist</strong></p>
+  <p>
+    With a passion for solving real business challenges at scale, I specialize in building robust data pipelines, cloud architectures, and analytics frameworks that unlock powerful insights and drive bottom-line results. 
+    <br><br>
+    Over the past 4+ years, I've architected end-to-end solutions for enterprises and startups—from designing massive Spark ETL jobs on AWS and Snowflake to developing predictive models and real-time dashboards that shape executive decisions. My technical toolkit spans Python, PySpark, SQL, and Scala, with advanced expertise in cloud platforms (Databricks, AWS, Snowflake, Redshift), machine learning (regression, classification, uplift modeling), and next-gen BI (Power BI, Tableau).
+    <br><br>
+    I thrive at the intersection of engineering and analytics—automating processes, championing data quality, and translating ambiguous business needs into actionable insights. Whether optimizing a 100TB data lake, delivering A/B testing analytics, or mentoring teams on Agile best practices, I bring rigor, creativity, and relentless curiosity to every project.
+    <br><br>
+    I'm actively seeking full-time roles where I can drive business value through data engineering, analytics, and cross-functional leadership. Let’s connect if you’re looking for someone who can not only build the pipeline, but tell the story behind the numbers and deliver measurable business impact.
+  </p>
+  <div class="social-links">
+    <a href="https://github.com/divya-ls" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/divls" target="_blank">LinkedIn</a>
+    <a href="mailto:sdivya.lanka@gmail.com">Email</a>
+  </div>
+</section>
 
   <section id="experience">
     <h2>Experience</h2>
+    
     <div class="exp-card">
-      <h3>Graduate Research Assistant <span>@ UNC Charlotte</span></h3>
-      <span class="exp-date">Aug 2023 – Dec 2024</span>
+      <h3>University of North Carolina at Charlotte</h3>
+      <p><strong>Data Engineer / BI Analyst (Graduate Research Assistant)</strong></p>
+      <span class="exp-date">Feb 2024 – Dec 2024 | Charlotte, NC</span>
       <ul>
-        <li>Designed and deployed Power BI dashboards for environmental and dining analytics.</li>
-        <li>Built ETL data pipelines using SQL and Azure; automated data collection, reducing manual work by 40%.</li>
-        <li>Collaborated with cross-functional teams to drive data-driven business decisions.</li>
+        <li>Developed end-to-end Airflow & Terraform pipelines to ingest and transform recruiting and logistics data into a Snowflake data mart.</li>
+        <li>Configured AWS Lambda functions for schema validation and REST/SOAP data ingestion, reducing manual integration time by 75%.</li>
+        <li>Performance-tuned Snowflake instance, implemented clustering keys and resource monitors, improving query throughput by 60%.</li>
+    </ul>
+    </div>
+
+    <div class="exp-card">
+      <h3>CDL Enterprises Inc</h3>
+      <p><strong>Data Engineer Intern</strong></p>
+      <span class="exp-date">Sep 2024 – Dec 2024 | Charlotte, NC</span>
+      <ul>
+        <li>Engineered a 100 TB+ Apache Iceberg data lake on S3, enabling high-speed Spark/Databricks queries for event-stream analysis.</li>
+        <li>Automated metadata-driven ETL jobs in Spark & Airflow, slashing new source onboarding time by 70%.</li>
+        <li>Implemented real-time alerting and debugging tools using AWS CloudWatch and custom Python scripts to ensure pipeline health.</li>
+    </ul>
+    </div>
+
+    <div class="exp-card">
+      <h3>Bank of America</h3>
+      <p><strong>Data Engineer Intern</strong></p>
+      <span class="exp-date">May 2024 – Jul 2024 | Charlotte, NC</span>
+      <ul>
+        <li>Built scalable, user-friendly dashboards in Power BI & Tableau for Finance, Risk & Marketing, reduced report prep by 85% and improved profitability by 12%.</li>
+        <li>Architected low-latency stream analytics with Kafka Connect, ksqlDB & Flink SQL, delivered millisecond-level market insights to senior stakeholders.</li>
+        <li>Defined & executed data acquisition strategy across Oracle, Snowflake & MongoDB standardized ETL pipelines.</li>
+     </ul>
+    </div>
+
+    <div class="exp-card">
+      <h3>Tata Consultancy Services</h3>
+      <p><strong>Data Engineer</strong></p>
+      <span class="exp-date">Jul 2021 – Jul 2023 | Chennai, India</span>
+      <ul>
+        <li>Built Spark & Python ETL on EMR to load and cleanse 20M+ daily events into Redshift, improving data freshness by 35%.</li>
+        <li>Designed dimensional schemas and automated dbt transformations for downstream Power BI dashboards consumed by 50+ users.</li>
+        <li>Developed Python data-processing scripts and Airflow DAGs with SLA alerting to detect and recover from failures within 15 minutes.</li>
+     </ul>
+    </div>
+
+    <div class="exp-card">
+      <h3>CricClubs (Startup)</h3>
+      <p><strong>Data Engineer</strong></p>
+      <span class="exp-date">Feb 2021 – Jul 2021 | Hyderabad, India</span>
+      <ul>
+        <li>Architected MySQL data warehouse and Python/Java ETL scripts to consolidate 150K+ daily user events, ensuring 99.5% data accuracy.</li>
+        <li>Created Excel VBA macros and QuickSight dashboards for marketing & ops, reducing manual report generation by 80%.</li>
+        <li>Partnered with Product & QA to iterate on analytics tools, delivering three major enhancements in three months.</li>
+        
       </ul>
     </div>
-    <!-- Repeat similar blocks for other experiences -->
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div>
+      <strong>University of North Carolina at Charlotte</strong><br>
+      Master of Science, Data Science and Business Analytics<br>
+      Aug 2023 – Dec 2024 | GPA: 3.60/4.0<br>
+      Achievements: Honor Roll, Graduate Teaching Assistant, Graduate Research Assistant, Finalist in UNC Data Analytics Challenge
+    </div>
+    <br>
+    <div>
+      <strong>Jawaharlal Nehru Technological University, Hyderabad</strong><br>
+      Bachelor of Technology, Electronics and Communications Engineering<br>
+      Jul 2017 – Jul 2021 | GPA: 3.6/4.0
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="proj-card">
-      <h3>NASDAQ Market Analytics Dashboard</h3>
-      <p>Built a real-time analytics dashboard for NASDAQ's financial KPIs. Automated data ETL, reducing report time by 70%.</p>
-      <p><strong>Tech:</strong> Power BI, SQL, Python, Azure</p>
-      <a href="https://github.com/divya-ls/nasdaq-dashboard" target="_blank">GitHub</a>
-    </div>
-    <!-- Add more projects in the same style -->
+        </div>
   </section>
 
   <section id="skills">
@@ -67,18 +126,24 @@
       <li>SQL</li>
       <li>Power BI</li>
       <li>Tableau</li>
-      <li>Azure</li>
       <li>Snowflake</li>
-      <li>Git</li>
-      <li>JavaScript</li>
-      <!-- Add more -->
+      <li>Spark</li>
+      <li>Databricks</li>
+      <li>Airflow</li>
+      <li>dbt</li>
+      <li>Redshift</li>
+      <li>Azure</li>
+      <li>AWS</li>
+      <li>Terraform</li>
+      <li>Kafka</li>
+      <li>Flink</li>
+      <li>MongoDB</li>
+      <li>Oracle</li>
+      <li>QuickSight</li>
+      <li>Java</li>
+      <li>Excel (VBA)</li> 
+      <!-- Add more as needed -->
     </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>MS, Data Science & Business Analytics</strong><br>UNC Charlotte, 2024</p>
-    <p><strong>BTech, Computer Science</strong><br>Osmania University, 2022</p>
   </section>
 
   <section id="resume">
@@ -89,7 +154,6 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Let's connect! Email me at <a href="mailto:sdivya.lanka@gmail.com">sdivya.lanka@gmail.com</a></p>
-    <!-- Optional: Add a contact form here -->
   </section>
 
   <footer>
